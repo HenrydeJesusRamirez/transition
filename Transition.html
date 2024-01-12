@@ -3,14 +3,24 @@
 
 <head>
   <style>
-    div {
-      width: 43px;
+    *{
+      margin: 0;
+      padding: 0;
+      
+    }
+    .main {
+      display: flex;
+      justify-content:space-around;
+      background-color: rgb(115, 255, 0);
+    }
+    .transition1 {
+      width: 45px;
       height: 20px;
       background: red;
       transition: width 1s, height 2s;
     }
 
-    div:hover {
+    .transition1:hover {
       height: 25px;
       width: 200px;
       color: white;
@@ -18,14 +28,50 @@
       font-family: cursive;
       -webkit-box-reflect: right;
     }
-  </style>
+
+    .coding {
+      width: 500px;
+     padding: 5px;
+     margin: 15px;
+    }
+   </style>
 </head>
 
 <body>
- 
+
+  <div class="main"><!--Main Container Open-->
+
+    <section class="textarea">
+      <textarea name="" id="" cols="50" rows="10">
+        <h1>The transition Property</h1>
+        <p>Hover over the div element below, to see the transition effect:</p>
+        <div class="transition1">HOLA</div>
+        -----------
+        .transition1 {
+          width: 45px;
+          height: 20px;
+          background: red;
+          transition: width 1s, height 2s;
+        }
+    
+        .transition1:hover {
+          height: 25px;
+          width: 200px;
+          color: white;
+          font-size: 20px;
+          font-family: cursive;
+          -webkit-box-reflect: right;
+        }
+      </textarea>
+    </section>
+
+    <section class="coding">
       <h1>The transition Property</h1>
       <p>Hover over the div element below, to see the transition effect:</p>
-      <div>HOLA</div>
+      <div class="transition1">HOLA</div>
+    </section>
 
+  </div><!--Main Container Close-->
 </body>
+
 </html>
